@@ -23,15 +23,15 @@ default: &default
 
 development:
   <<: *default
-  database: demo_rails_forestadmin_development
-  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_USERNAME_FOR_DEVELOPMENT"] %>
-  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_PASSWORD_FOR_DEVELOPMENT"] %>
+  database: demo_rails_forest_admin_development
+  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_USERNAME_FOR_DEVELOPMENT"] %>
+  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_PASSWORD_FOR_DEVELOPMENT"] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: demo_rails_forestadmin
+  #username: demo_rails_forest_admin
 
   # The password associated with the postgres role (username).
   #password:
@@ -59,9 +59,9 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: demo_rails_forestadmin_test
-  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_USERNAME_FOR_TEST"] %>
-  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_PASSWORD_FOR_TEST"] %>
+  database: demo_rails_forest_admin_test
+  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_USERNAME_FOR_TEST"] %>
+  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_PASSWORD_FOR_TEST"] %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: demo_rails_forestadmin_production
-  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_USERNAME_FOR_PRODUCTION"] %>
-  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FORESTADMIN_PASSWORD_FOR_PRODUCTION"] %>
+  database: demo_rails_forest_admin_production
+  username: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_USERNAME_FOR_PRODUCTION"] %>
+  password: <%= ENV["POSTGRES_USER_DEMO_RAILS_FOREST_ADMIN_PASSWORD_FOR_PRODUCTION"] %>

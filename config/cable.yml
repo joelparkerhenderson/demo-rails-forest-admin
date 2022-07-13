@@ -8,4 +8,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: demo_rails_forestadmin_production
+  channel_prefix: demo_rails_forest_admin_production
